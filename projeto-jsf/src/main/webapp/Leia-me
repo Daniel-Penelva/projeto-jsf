@@ -1,0 +1,35 @@
+
+JSF é um MVC (MODEL-VIEW-CONTROLLER)
+
+
+
+                             CONTROLLER            VIEW                                MODEL
+                          
+ CLIENTES -------------->  (Manager Beans)  +  (Páginas JSF) --------------> (entidades e regras de negócio)
+          <-------------   (Faces Servlet)       (XHTML)     <-------------
+
+O Controller intercepta os dados da tela que é jogado no Model. Ele também buscas os dados que estão no Model que é jogado para a View (tela).
+
+
+Principais Componentes do JSF - SITE: https://www.tutorialspoint.com/jsf/index.htm
+
+ShowCase Primefaces - SITE: https://www.primefaces.org/showcase/index.xhtml?jfwid=1aeba
+
+Site oficial javaserverfaces - SITE: https://javaee.github.io/javaserverfaces-spec/
+
+Bibliotecas de terceiros que trabalham com JSF - SITE: http://icefaces-showcase.icesoft.org/showcase.jsf
+                                                 SITE: http://showcase.richfaces.org/
+
+
+< Aula 24.11 - Ensina a configurar o ambiente e a criar o primeiro projeto jsf >
+
+O projeto Maven criado talvez não apareça para o servidor tomcat, o que signfica que o seu projeto não é um projeto web. Logo,temos que 
+tornar esse projeto como web. E como fazer isso?
+Clica no projeto e com o botão direito do mouse > properties > Projects Facets > Clica em "Convert to faceted form..." > Habilitar 'Dynamic Web Module', 'Javascript, 'JavaServer Faces' e 'JPA' > apply
+Clica no projeto e com o botão direito do mouse > properties > Projects Facets > na aba 'Runtimes' define o tomcat que vai ser utilizado > apply
+OBS. Se aparecer um "x em vermelho" clica nesse x e em 'JPA implemention' escolhe o type 'Disable Library Configuration' > next > marca o 'Generate web.xml deployment descriptor' > next > ok
+
+OBS. No eclipse a aba 'Markers' foi mostrado erro de java compiler, ou seja, era um erro de jdk que não estava compativel com o projeto. No caso, alterei 
+para o JDK que estou usando nos projetos.
+
+
