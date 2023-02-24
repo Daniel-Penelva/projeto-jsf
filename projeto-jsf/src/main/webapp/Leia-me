@@ -25,11 +25,34 @@ Bibliotecas de terceiros que trabalham com JSF - SITE: http://icefaces-showcase.
 
 O projeto Maven criado talvez não apareça para o servidor tomcat, o que signfica que o seu projeto não é um projeto web. Logo,temos que 
 tornar esse projeto como web. E como fazer isso?
+
 Clica no projeto e com o botão direito do mouse > properties > Projects Facets > Clica em "Convert to faceted form..." > Habilitar 'Dynamic Web Module', 'Javascript, 'JavaServer Faces' e 'JPA' > apply
 Clica no projeto e com o botão direito do mouse > properties > Projects Facets > na aba 'Runtimes' define o tomcat que vai ser utilizado > apply
 OBS. Se aparecer um "x em vermelho" clica nesse x e em 'JPA implemention' escolhe o type 'Disable Library Configuration' > next > marca o 'Generate web.xml deployment descriptor' > next > ok
 
 OBS. No eclipse a aba 'Markers' foi mostrado erro de java compiler, ou seja, era um erro de jdk que não estava compativel com o projeto. No caso, alterei 
 para o JDK que estou usando nos projetos.
+
+------------------------------------------------------------------------
+
+Entendendo o ManagedBean JSF
+
+    Front-end            ------------->  Back-end
+   (Página JSF - XHTML)  <-------------  (ManagedBean - Controlador)
+   
+
+O JSF terá a página de view (tela) que vai ser criada com um conjunto de tags especiais que vai ser comunicar com o servlet.
+ 
+Vai ser preciso criar os managedbean que é um objeto controlado pelo JSF que por conseqüência vai saber como se comunicar 
+com o Servlet e com as tags especiais vinda da tela, ou seja, o managedbean ao ser criado vai ser o responsável por controlar
+a página. Lembrando que ele vai ser o back-end  que são os eventos da página (por exemplo, um evento de cadastro). 
+Portanto, primeiro lá no Servlet vai ter a anotação “@Controller” onde vai ser possível fazer a instância do objeto que vai
+cumprir com o papel de intermediador do managedbean e com o framework Spring.
+
+Vale ressaltar, que a primeiro momento ele vai trabahar com o JSF, logo ele usará a anotação “@ManagedBean” para 
+capturar os dados da tela no momento que o usuário executar o botão, esses dados referente ao usuário vão ser capturados 
+pelo servlet e vai passar para o seu “@ManagedBean”, logo todos os dados que estavam na tela vão ser armazenados num objeto
+da entidade (camada model), onde vai ser setado por ele todos os dados. 
+
 
 
