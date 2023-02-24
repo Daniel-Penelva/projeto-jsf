@@ -1,3 +1,6 @@
+Link do Projeto:
+http://localhost:8080/projeto-jsf/faces/primeirapagina.xhtml
+
 
 JSF é um MVC (MODEL-VIEW-CONTROLLER)
 
@@ -53,6 +56,17 @@ Vale ressaltar, que a primeiro momento ele vai trabahar com o JSF, logo ele usar
 capturar os dados da tela no momento que o usuário executar o botão, esses dados referente ao usuário vão ser capturados 
 pelo servlet e vai passar para o seu “@ManagedBean”, logo todos os dados que estavam na tela vão ser armazenados num objeto
 da entidade (camada model), onde vai ser setado por ele todos os dados. 
+
+OBS. No arquivo web.xml na pasta WEB-INF, a tag servlet-class é onde está a classe principal do funcionamento do JSF.
+OBS. E a tag url-pattern é onde define os mapeamentos da url(s).
+
+Ao criar a página XHTML vai ser preciso adicionar a anotação do JSF na página. E vai ser usado como referencia a letra h 
+para o namespace. EX: xmlns:h="http://java.sun.com/jsf/html". 
+Esse xml namespace vai ser puxado do próprio framework onde estão as bibliotecas (dependencias) baixadas no Maven do seu projeto.
+
+Link do Projeto:
+http://localhost:8080/projeto-jsf/faces/primeirapagina.xhtml
+
 
 
 
