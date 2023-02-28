@@ -134,6 +134,19 @@ você verá que manterá os nomes ainda cadastrados.
 
 Bom saber sobre Application Scoped: 
 Significa que todos os usuário irão poder compartilhar esses dados, até os que não teriam permissão de visualizar a 
-informação dos dados.
+informação dos dados. É compartilhado em todas as aplicações.
+
+---------------------------------
+
+Managed Bean: É qualquer bean cuja vida é gerenciada pelo Faces.
+
+Backing Bean: Como diz o nome, é um “Bean por detrás”, um “Bean que dá suporte”. Ou seja, é o Bean que está por trás da funcionalidade
+de uma página, cuidando dos seus componentes, do estado da página, da navegação, etc. Costuma ser intimamente associado a 
+alguma página.
+Todo backing-bean também é um managed bean, mas nem todo managed bean é um backing-bean. Pode ser um objeto de negócio, por exemplo.
+
+Backing Bean (são maneged bean) trabalha com os componentes jsf junto com o objeto, ou seja, todos os componentes xhtml 
+que estiver terá a respectiva classe do java. É possivel trabalhar com os componentes no back-end. Mas essa pratica não 
+é recomendada.
 
 
