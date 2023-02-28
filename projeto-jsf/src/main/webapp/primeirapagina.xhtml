@@ -9,22 +9,24 @@
 <h:body>
 
 	<h:form>
-	    
-	    <label>Nome:</label>
-	    <h:inputText id="nome" value="#{pessoaBean.nome}"/>
-	    <br />
-		
-		<label>Sobrenome:</label>
-		<h:inputText id="sobrenome" value="#{pessoaBean.sobrenome}"/>
+
+		<label>Nome:</label>
+		<h:inputText id="nome" value="#{pessoaBean.nome}" />
 		<br />
-		
-		<h:commandButton value="Mostrar nome" action="#{pessoaBean.mostrarNome}"/>
+
+		<h:commandButton value="Adicionar nome" action="#{pessoaBean.addNome}" />
 		<br />
-		
-		<h:outputText value="#{pessoaBean.nomeCompleto}"/>
-		
+
+		<h:dataTable value="#{pessoaBean.nomes}" var="n">
+			<h:column>
+				<h:outputText value="#{n}"></h:outputText>
+			</h:column>
+		</h:dataTable>
+
 	</h:form>
 
 </h:body>
+
+<!-- A tag 'var' tem como objetivo varrer os nomes da lista de nomes! -->
 
 </html>
