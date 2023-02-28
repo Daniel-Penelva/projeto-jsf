@@ -1,6 +1,8 @@
 Link do Projeto:
 http://localhost:8080/projeto-jsf/faces/primeirapagina.xhtml
 
+Modificado o web.xml - agora o link vai ser:
+http://localhost:8080/projeto-jsf/primeirapagina.jsf
 
 JSF é um MVC (MODEL-VIEW-CONTROLLER)
 
@@ -66,7 +68,7 @@ para o namespace. EX: xmlns:h="http://java.sun.com/jsf/html".
 Esse xml namespace vai ser puxado do próprio framework onde estão as bibliotecas (dependencias) baixadas no Maven do seu projeto.
 
 Link do Projeto:
-http://localhost:8080/projeto-jsf/faces/primeirapagina.xhtml
+http://localhost:8080/projeto-jsf/primeirapagina.jsf
 
 ----------------------------------------------
 

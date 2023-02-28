@@ -7,6 +7,8 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.component.html.HtmlCommandButton;
 
+@ViewScoped
+@ManagedBean(name = "pessoaBean")
 public class PessoaBean {
 
 	private String nome;
