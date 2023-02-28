@@ -115,7 +115,13 @@ não é possível usar o request Scoped numa lista já que sempre que for adicio
 possível adicionar outro usuário. Portanto, o Request Scoped só é recomendado usar num cadastro, ou seja, capturou
 os dados da tela de cadastro, salvou no banco de dados e por fim morreu.
 
+---------------------------------
 
+Bom saber sobre View Scoped: 
+Enquanto estiver com a tela 'primeirapagina.xhtml' aberta, independente do que estiver na tela (exemplo um formulario de cadastro)
+o maneged bean vai manter esse estado de ativo, ou seja, vai continuar mantendo os dados na tela. Portanto, o que 
+vai fazendo na tela vai guardando os dados.
+Logo, ele só morre, se por exemplo, redirecionar a tela para outra página.
 
 
 
