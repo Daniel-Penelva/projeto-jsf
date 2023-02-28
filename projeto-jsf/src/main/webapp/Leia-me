@@ -130,8 +130,10 @@ Usado para usuários logados. A sessão é mantida enquanto o navegador continua
 Acesse o link do seu projeto cadastre alguns nomes e depois submeta esse mesmo link em outra aba do seu navegador, 
 você verá que manterá os nomes ainda cadastrados.
 
+---------------------------------
 
-
-
+Bom saber sobre Application Scoped: 
+Significa que todos os usuário irão poder compartilhar esses dados, até os que não teriam permissão de visualizar a 
+informação dos dados.
 
 
