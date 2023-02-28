@@ -68,6 +68,43 @@ Esse xml namespace vai ser puxado do próprio framework onde estão as bibliotec
 Link do Projeto:
 http://localhost:8080/projeto-jsf/faces/primeirapagina.xhtml
 
+----------------------------------------------
+
+Escopos do Maneged Beans
+
+Quando referenciamos um maneged bean via EL, o framework do JSF instanciará um objeto de classe do manede bean, o 
+recuperará uma instância existente. Todas as instâncias possuem um tempo de vida, que é definido dependendo do escopo
+usado no maneged bean.
+
+Os escopos de maneged beans JSF podem ser definidos através de anotações do pacote javax.faces.bean.
+
+Obejtivo: Define comportamentos para telas e sistemas e cada escopo resolve um tipo de problema e cada um tem sua 
+função específica.
+
+-----------------------------------------------
+
+Principais Escopos:
+
+@NoneScoped
+O bean será instanciado a cada vez que for referenciado.
+
+@RequestScope (padrão)
+Tem vida curta, começando quando é referenciado em uma única requisição HTTP e terminando quando a resposta é 
+enviada de volta ao cliente.
+
+@ViewScope 
+A instância permanece ativa até que o usário navegue para uma próxima página.
+
+@SessionScoped
+Mantém a instância durante diversas requisições e até mesmo navegações entre páginas, até que a sessão do 
+usuário seja invalidada ou o tempo limite é atingido. Cada usuário possui uma sessão de navegação, portanto, os 
+objetos não são compartilhados entre os usuários.
+
+@ApplicationScoped
+Mantém a instância durante todo o tempo de execução da aplicação. É um escopo que compartilha os objetos para 
+todos os usuários do sistema.
+
+
 
 
 
