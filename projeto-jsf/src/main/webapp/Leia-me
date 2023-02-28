@@ -25,6 +25,7 @@ Bibliotecas de terceiros que trabalham com JSF - SITE: http://icefaces-showcase.
 
 
 < Aula 24.11 - Ensina a configurar o ambiente e a criar o primeiro projeto jsf >
+< Aula 24.17 - Ensina a corrigir erros de biblioteca e de java compiler (em relação ao jdk) >
 
 O projeto Maven criado talvez não apareça para o servidor tomcat, o que signfica que o seu projeto não é um projeto web. Logo,temos que 
 tornar esse projeto como web. E como fazer isso?
@@ -66,6 +67,11 @@ Esse xml namespace vai ser puxado do próprio framework onde estão as bibliotec
 
 Link do Projeto:
 http://localhost:8080/projeto-jsf/faces/primeirapagina.xhtml
+
+
+
+
+
 
 
 
