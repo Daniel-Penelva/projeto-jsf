@@ -106,7 +106,7 @@ todos os usuários do sistema.
 
 ---------------------------------
 
-Bom saber: 
+Bom saber sobre Request Scoped: 
 Em relação ao Request Scoped, ao clicar no botão 'adicionar nome', ele chama uma requisição, no caso, o método 
 addNome e adiciona o nome na lista e quando o servidor dá a resposta para o navegador o bean Pessoa (pessoaBean) 
 que estava na memória morre (portanto, ao gerar uma requisição ele processo o maneged bean, devolve a resposta, e morre), 
