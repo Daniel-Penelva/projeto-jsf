@@ -123,7 +123,12 @@ o maneged bean vai manter esse estado de ativo, ou seja, vai continuar mantendo 
 vai fazendo na tela vai guardando os dados.
 Logo, ele só morre, se por exemplo, redirecionar a tela para outra página.
 
+---------------------------------
 
+Bom saber sobre Session Scoped: 
+Usado para usuários logados. A sessão é mantida enquanto o navegador continuar aberto pelo usuário.
+Acesse o link do seu projeto cadastre alguns nomes e depois submeta esse mesmo link em outra aba do seu navegador, 
+você verá que manterá os nomes ainda cadastrados.
 
 
 
