@@ -22,9 +22,10 @@ public class PessoaBean {
 
 		if (nomes.size() > 3) {
 			commandButton.setDisabled(true);
+			return "paginanavegada";
 		}
 
-		return "";
+		return ""; // null ou vazia fica na mesma página --> outcome
 	}
 
 	public String getNome() {
