@@ -12,10 +12,13 @@ import javax.faces.component.html.HtmlCommandButton;
 public class PessoaBean {
 
 	private String nome;
+	private String senha;
+	private String texto;
 
 	private HtmlCommandButton commandButton;
 
 	private List<String> nomes = new ArrayList<String>();
+	private List<String> listaCadastro = new ArrayList<String>();
 
 	public String addNome() {
 		nomes.add(nome);
@@ -26,6 +29,14 @@ public class PessoaBean {
 		}
 
 		return ""; // null ou vazia fica na mesma página --> outcome
+	}
+
+	public String addListaCadastro() {
+		listaCadastro.add(nome);
+		listaCadastro.add(senha);
+		listaCadastro.add(texto);
+
+		return "";
 	}
 
 	public String getNome() {
@@ -50,6 +61,30 @@ public class PessoaBean {
 
 	public void setCommandButton(HtmlCommandButton commandButton) {
 		this.commandButton = commandButton;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public String getTexto() {
+		return texto;
+	}
+
+	public void setTexto(String texto) {
+		this.texto = texto;
+	}
+
+	public List<String> getListaCadastro() {
+		return listaCadastro;
+	}
+
+	public void setListaCadastro(List<String> listaCadastro) {
+		this.listaCadastro = listaCadastro;
 	}
 
 }

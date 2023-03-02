@@ -13,15 +13,32 @@
 		<label>Nome:</label>
 		<h:inputText id="nome" value="#{pessoaBean.nome}" />
 		<br />
-
+		
 		<h:commandButton binding="#{pessoaBean.commandButton}"
 			value="Adicionar nome" action="#{pessoaBean.addNome}" />
 		<br />
 
+		<label>Senha:</label>
+		<h:inputSecret id="senha" value="#{pessoaBean.senha}" />
+		<br />
+
+		<label>Texto:</label>
+		<h:inputTextarea id="texto" value="#{pessoaBean.texto}" rows="10" cols="10"/>
+		<br />
+		
+		<h:commandButton value="Adicionar a Lista" action="#{pessoaBean.addListaCadastro}" />
+		<br />
+		
 		<h:dataTable value="#{pessoaBean.nomes}" var="n">
 			<h:column>
 				<h:outputText value="#{n}"></h:outputText>
 			</h:column>
+		</h:dataTable>
+		
+		<h:dataTable value="#{pessoaBean.listaCadastro}" var="listaCadastro">
+		   <h:column>
+		    <h:outputText value="#{listaCadastro}"></h:outputText>
+		   </h:column>
 		</h:dataTable>
 
 	</h:form>
