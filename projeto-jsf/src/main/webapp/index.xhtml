@@ -5,14 +5,29 @@
 
 <h:head>
 	<title>Olá JSF</title>
+
+	<script>
+		function alterarValorCampo() {
+			var campo = document.getElementById('formPessoa:nome');
+			campo.value = 'Clica no campo :)';
+		}
+	</script>
+	
 </h:head>
 <h:body>
 
-	<h:form>
+	<h:form id="formPessoa">
 		<h1>Olá, Bem Vindo ao Projeto JSF!</h1>
-		
+
 		<h:commandButton value="Navegar" action="primeirapagina"></h:commandButton>
 		<h:commandButton value="Navegar Explicita" action="explicita"></h:commandButton>
+		
+		<br/>
+		
+		<h3>Clica no botão abaixo</h3>
+		<h:inputText id="nome" onclick="this.value='insira outro valor'" onchange="this.value = this.value.toUpperCase();"/>
+		<h:commandButton value="Clicar" onclick="alterarValorCampo();"/>
+
 	</h:form>
 
 </h:body>
