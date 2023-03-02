@@ -152,4 +152,8 @@ Backing Bean (são maneged bean) trabalha com os componentes jsf junto com o obj
 que estiver terá a respectiva classe do java. É possivel trabalhar com os componentes no back-end. Mas essa pratica não 
 é recomendada.
 
+------------------------------
+
+A navegação explicita é feito dentro do arquivo faces-config.xml
+
 
